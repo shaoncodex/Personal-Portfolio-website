@@ -1,20 +1,23 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { ProfilePhoto } from "./ProfilePhoto";
 
 export const About = () => {
   return (
     <section id="about" className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold font-display mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold font-display mb-6 animate-slide-up">
             About <span className="bg-gradient-primary bg-clip-text text-transparent">Me</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full" />
+          <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full animate-scale-in" />
         </div>
+
+        <ProfilePhoto />
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <Card className="p-8 bg-gradient-card backdrop-blur-glass border border-border/20 shadow-card hover:shadow-glow transition-all duration-500">
+            <Card className="p-8 bg-gradient-card backdrop-blur-glass border border-border/20 shadow-card hover:shadow-glow transition-all duration-500 animate-slide-up hover:scale-105">
               <h3 className="text-2xl font-semibold mb-4 text-primary">My Journey</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 I'm a passionate creative professional who believes in the power of design and technology 
@@ -27,7 +30,7 @@ export const About = () => {
               </p>
             </Card>
             
-            <Card className="p-8 bg-gradient-card backdrop-blur-glass border border-border/20 shadow-card hover:shadow-glow transition-all duration-500">
+            <Card className="p-8 bg-gradient-card backdrop-blur-glass border border-border/20 shadow-card hover:shadow-glow transition-all duration-500 animate-slide-up hover:scale-105" style={{ animationDelay: '0.2s' }}>
               <h3 className="text-2xl font-semibold mb-4 text-accent">What Drives Me</h3>
               <p className="text-muted-foreground leading-relaxed">
                 I'm driven by the challenge of turning complex problems into elegant solutions. 
